@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:700");
+body {
+  margin: 0;
+  padding: 0; }
+
+.body {
+  overflow: hidden; }
+
+.cover {
+  position: absolute;
+  position: fixed !important;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: none;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.cover img {
+  height: auto;
+  width: auto;
+  max-width: 90%;
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.active {
+  display: block; }
+
+.close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer; }
+
+.up {
+  position: absolute;
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  top: 17px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.down {
+  position: absolute;
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  bottom: 17px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+nav {
+  text-align: center;
+  padding-bottom: 15px;
+  margin-top: 50px; }
+
+ul li {
+  border: 2px #000 solid;
+  display: inline;
+  list-style: none;
+  padding: 15px 30px;
+  margin: 0 15px; }
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding: 15px 25px;
+  margin: -2em; }
+
+.menu {
+  cursor: pointer; }
+
+.small-nav {
+  display: none; }
+
+#main-left {
+  width: 48%;
+  background-color: cadetblue;
+  float: left;
+  text-align: center;
+  margin: 1%; }
+  #main-left p {
+    padding: 10px; }
+
+#main-right {
+  background-color: bisque;
+  width: 48%;
+  float: right;
+  text-align: center;
+  margin: 1%; }
+  #main-right p {
+    padding: 10px; }
+
+.images {
+  width: 98%;
+  margin: 1% 1%;
+  height: 250px;
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.img-box {
+  height: 250px;
+  width: 250px;
+  margin: 5px; }
+
+.test {
+  height: 500px;
+  width: 500px;
+  margin: 25px; }
+
+img {
+  height: 100%;
+  width: 100%; }
+
+/* Media screen small ecrans */
+@media screen and (max-width: 992px) {
+  nav {
+    padding: 0;
+    margin: 0; }
+
+  #main-left, #main-right {
+    width: 100%;
+    margin: 10px 0 0 0; }
+
+  ul li {
+    visibility: hidden; }
+
+  .small-nav {
+    display: block; }
+
+  .small-nav-text {
+    background-color: cadetblue;
+    padding: 20px 0;
+    cursor: pointer; }
+
+  .menu-text {
+    display: inline;
+    width: 100px;
+    padding: 0;
+    margin: auto;
+    font-family: "Oswald", sans-serif;
+    font-size: 22px;
+    margin: 0 15px; }
+
+  .menu-arrow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-bottom: 6px black solid;
+    border-right: 6px black solid;
+    margin: 5px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: 300ms ease-in-out;
+    -moz-transition: 300ms ease-in-out;
+    -ms-transition: 300ms ease-in-out;
+    -o-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out; }
+
+  .menu-arrow-up {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-bottom: 6px black solid;
+    border-right: 6px black solid;
+    margin: -3px 0;
+    -webkit-transition: 300ms ease-in-out;
+    -ms-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
+
+  .menu {
+    height: 122px;
+    display: none; }
+
+  .menu li {
+    height: 40px;
+    background-color: aliceblue;
+    margin-top: 2px;
+    list-style: none; }
+
+  a {
+    display: inline-block;
+    width: 95%;
+    margin: -5px; }
+
+  .menu li:hover {
+    background-color: cadetblue; }
+
+  ul {
+    display: none; } }
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
